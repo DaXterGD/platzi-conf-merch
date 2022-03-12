@@ -62,6 +62,7 @@ module.exports = {
     static: path.join(__dirname, 'dist'),
     compress: true,
     port: 3000,
+    open: true,
   },
   mode: 'development',
 };
