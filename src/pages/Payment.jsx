@@ -1,5 +1,5 @@
-import React from 'react';
-import '@styles/Payment.scss'
+import React from "react";
+import "@styles/Payment.scss";
 
 const Payment = () => {
   return (

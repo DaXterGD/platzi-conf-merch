@@ -1,8 +1,8 @@
-import React from 'react';
-import '@styles/Layout.scss';
+import React from "react";
+import "@styles/Layout.scss";
 
-import Header from '@components/Header';
-import Footer from '@components/Footer';
+import Header from "@components/Header";
+import Footer from "@components/Footer";
 
 const Layout = ({ children }) => {
   return (

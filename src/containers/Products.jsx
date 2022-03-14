@@ -1,6 +1,6 @@
-import React from 'react';
-import '@styles/Products.scss';
-import Product from '@components/Product';
+import React from "react";
+import "@styles/Products.scss";
+import Product from "@components/Product";
 
 const Products = ({ products }) => {
   return (

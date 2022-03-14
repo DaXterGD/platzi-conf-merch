@@ -7,7 +7,9 @@ const CheckoutItem = () => {
         <h4>Item name:</h4>
         <span>$10</span>
       </div>
-      <button type="button">Eliminar</button>
+      <button type="button">
+        <i title="eliminar" className="fas fa-trash-alt" />
+      </button>
     </div>
   );
 };
