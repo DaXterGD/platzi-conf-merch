@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import '@styles/index.css';
 
 import Layout from '@containers/Layout';
@@ -12,7 +12,7 @@ import NotFound from '@pages/NotFound';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <Router>
       <Layout>
         <Routes>
           <Route exact path="/" element={<Home />} />
@@ -23,7 +23,7 @@ const App = () => {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
-    </BrowserRouter>
+    </Router>
   );
 };
 

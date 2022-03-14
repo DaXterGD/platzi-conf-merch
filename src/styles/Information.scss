@@ -1,44 +1,44 @@
-.Information {
+.info {
   grid-template-columns: 3fr 1fr;
   grid-gap: 2rem;
   grid-row-gap: 1.5em;
   display: grid;
   margin: 0 0 4em 0;
 }
-.Information-buttons {
+.info-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.info-sidebar {
+  margin: 10px 0 0 0;
+}
+.info-back,
+.info-next {
+  margin: 10px 0 0 0;
+}
+.info-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.Information-sidebar {
-  margin: 10px 0 0 0;
-}
-.Information-back {
-  margin: 10px 0 0 0;
-}
-.Information-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.Information-item .fas {
+.info-item .fas {
   margin: 0 0 0 10px;
   color: rgba(0,0,0,0.4);
   cursor: pointer;
 }
-.Information-item button {
+.info-item button {
   background-color: transparent;
   border: none;
   outline: none;
 }
-.Information-element {
+.info-element {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   border-bottom: 1px solid #eee;
 }
-.Information-element h4 {
+.info-element h4 {
   margin: 0;
 }
 h2 {
@@ -68,11 +68,16 @@ input {
   width: 100%;
   box-sizing: border-box;
 }
-.Information-buttons {
+
+label {
+  font-weight: bold;
+}
+
+.info-buttons {
   margin: 10px 0 0 ;
 }
-.Information button {
-  box-shadow: inset 0px 1px 0px 0px #bee2f9;
+.info button {
+    box-shadow: inset 0px 1px 0px 0px #bee2f9;
     background: linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
     background-color: #63b8ee;
     border-radius: 6px;
@@ -80,13 +85,11 @@ input {
     display: inline-block;
     cursor: pointer;
     color: #14396a;
-    font-family: Arial;
     font-size: 15px;
     font-weight: bold;
     padding: 6px 24px;
     text-decoration: none;
     text-shadow: 0px 1px 0px #7cacde;
-    width: 100%;
-    display: block;
+    width: 15vw;
     outline: none;
 }
