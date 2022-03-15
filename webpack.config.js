@@ -15,10 +15,10 @@ module.exports = {
       "@components": path.resolve(__dirname, "src/components"),
       "@containers": path.resolve(__dirname, "src/containers"),
       "@pages": path.resolve(__dirname, "src/pages"),
-      // '@hooks': path.resolve(__dirname, 'src/hooks'),
+      '@hooks': path.resolve(__dirname, 'src/hooks'),
       "@styles": path.resolve(__dirname, "src/styles"),
       // '@icons': path.resolve(__dirname, 'public/assets/icons'),
-      // '@context': path.resolve(__dirname, 'src/context'),
+      '@context': path.resolve(__dirname, 'src/context'),
     },
   },
   module: {
