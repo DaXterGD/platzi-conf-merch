@@ -65,4 +65,5 @@ module.exports = {
     open: true,
   },
   mode: "development",
+  devtool: "source-map",
 };

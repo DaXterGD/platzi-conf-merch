@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useRef, useContext } from "react";
+import AppContext from "@context/AppContext";
 
 const InformationForm = () => {
+  const { state, addToBuyer } = useContext(AppContext);
+  const form = useRef(null);
+
+  const { cart } = state;
+
   return (
     <section className="info-form">
-      <form action="">
+      <form ref={form}>
         <label htmlFor="name">Nombre</label>
         <input
           type="text"
