@@ -10,15 +10,15 @@ import Payment from "@pages/Payment";
 import Success from "@pages/Success";
 import NotFound from "@pages/NotFound";
 
-import AppContext from "@context/AppContext"
-import useInitialState from "@hooks/useInitialState"
+import AppContext from "@context/AppContext";
+import useInitialState from "@hooks/useInitialState";
 
 const App = () => {
-  const initialState = useInitialState()
+  const initialState = useInitialState();
 
   return (
-    <React.StrictMode value={initialState}>
-      <AppContext.Provider>
+    <React.StrictMode>
+      <AppContext.Provider value={initialState}>
         <Router>
           <Layout>
             <Routes>
