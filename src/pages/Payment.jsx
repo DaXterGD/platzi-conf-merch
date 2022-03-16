@@ -41,23 +41,27 @@ const Payment = () => {
         <h3>Resumen del pedido:</h3>
         {cart.map((item) => (
           <div className="payment-item" key={item.title}>
-            <div className="payment-elem">
+            <div className="payment-element">
               <h4>{item.title}</h4>
               <span>$ {item.price}</span>
             </div>
           </div>
         ))}
-        <div className="payment-button">
-          <PayPalButton
-            paypalOptions={paypalOptions}
-            buttonStyles={buttonStyles}
-            amount={handleSumTotal(cart)}
-            onPaymentStart={() => console.log("Start payment")}
-            onPaymentSuccess={(data) => handlePaymentSuccess(data)}
-            onPaymentError={(error) => console.log(error)}
-            onPaymentCancel={(data) => console.log(data)}
-          />
-        </div>
+        {cart.length > 0 ? (
+          <div className="payment-button">
+            <PayPalButton
+              paypalOptions={paypalOptions}
+              buttonStyles={buttonStyles}
+              amount={handleSumTotal(cart)}
+              onPaymentStart={() => console.log("Start payment")}
+              onPaymentSuccess={(data) => handlePaymentSuccess(data)}
+              onPaymentError={(error) => console.log(error)}
+              onPaymentCancel={(data) => console.log(data)}
+            />
+          </div>
+        ) : (
+          <h3>Sin items...</h3>
+        )}
       </div>
     </div>
   );
